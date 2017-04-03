@@ -16,8 +16,8 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Add a tab bar for **Now Playing** and **Top Rated** movies.
-- [ ] Implement segmented control to switch between list view and grid view.
+- [x] Add a tab bar for **Now Playing** and **Top Rated** movies.
+- [x] Implement segmented control to switch between list view and grid view.
 - [x] Add a search bar.
 - [x] All images fade in.
 - [ ] For the large poster, load the low-res image first, switch to high-res when complete.
@@ -32,13 +32,15 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='Flicks.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+- Unable to use the xib approach for UITabBarControl - had to duplicated code and add tab bar in story board
+- Detailed view scroll not quite right, the title should be visible 
 
 ## License
 

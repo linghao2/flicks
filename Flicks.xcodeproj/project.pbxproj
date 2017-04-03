@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6EF8FB1501A40C162727FC5D /* Pods_Flicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D280185C7BF8F20CE132F8B /* Pods_Flicks.framework */; };
+		CE1EB59D1E9203A600755916 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EB59C1E9203A600755916 /* NowPlayingViewController.swift */; };
+		CE1EB59F1E921DF700755916 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EB59E1E921DF700755916 /* GridCollectionViewCell.swift */; };
+		CE1EB5A11E92252800755916 /* Flicks.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE1EB5A01E92252800755916 /* Flicks.gif */; };
 		CEB199E21E8D7C9300CD1571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB199E11E8D7C9300CD1571 /* AppDelegate.swift */; };
 		CEB199E71E8D7C9300CD1571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB199E51E8D7C9300CD1571 /* Main.storyboard */; };
 		CEB199E91E8D7C9300CD1571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB199E81E8D7C9300CD1571 /* Assets.xcassets */; };
@@ -16,12 +19,16 @@
 		CEB199F61E8D853700CD1571 /* FlickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB199F51E8D853700CD1571 /* FlickTableViewCell.swift */; };
 		CEB199F81E8DA62300CD1571 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB199F71E8DA62300CD1571 /* DetailViewController.swift */; };
 		CECB82761E915068005E45F2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CECB82751E915068005E45F2 /* README.md */; };
+		CECB829C1E91C30F005E45F2 /* TopRatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB829B1E91C30F005E45F2 /* TopRatedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07335103DF96CAB8662D4925 /* Pods-Flicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flicks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flicks/Pods-Flicks.release.xcconfig"; sourceTree = "<group>"; };
 		0F3D8BAB2E06EEC29FF1350E /* Pods-Flicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flicks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flicks/Pods-Flicks.debug.xcconfig"; sourceTree = "<group>"; };
 		2D280185C7BF8F20CE132F8B /* Pods_Flicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1EB59C1E9203A600755916 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		CE1EB59E1E921DF700755916 /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE1EB5A01E92252800755916 /* Flicks.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Flicks.gif; sourceTree = "<group>"; };
 		CEB199DE1E8D7C9300CD1571 /* Flicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB199E11E8D7C9300CD1571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB199E61E8D7C9300CD1571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +39,7 @@
 		CEB199F51E8D853700CD1571 /* FlickTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickTableViewCell.swift; sourceTree = "<group>"; };
 		CEB199F71E8DA62300CD1571 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CECB82751E915068005E45F2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CECB829B1E91C30F005E45F2 /* TopRatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopRatedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				CECB82751E915068005E45F2 /* README.md */,
+				CE1EB5A01E92252800755916 /* Flicks.gif */,
 				CEB199E01E8D7C9300CD1571 /* Flicks */,
 				CEB199DF1E8D7C9300CD1571 /* Products */,
 				2DACD38F9D97478521371E7A /* Pods */,
@@ -86,7 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				CEB199F31E8D7CB800CD1571 /* FlicksViewController.swift */,
+				CECB829B1E91C30F005E45F2 /* TopRatedViewController.swift */,
+				CE1EB59C1E9203A600755916 /* NowPlayingViewController.swift */,
 				CEB199F51E8D853700CD1571 /* FlickTableViewCell.swift */,
+				CE1EB59E1E921DF700755916 /* GridCollectionViewCell.swift */,
 				CEB199F71E8DA62300CD1571 /* DetailViewController.swift */,
 				CEB199E11E8D7C9300CD1571 /* AppDelegate.swift */,
 				CEB199E51E8D7C9300CD1571 /* Main.storyboard */,
@@ -161,6 +173,7 @@
 			files = (
 				CEB199EC1E8D7C9300CD1571 /* LaunchScreen.storyboard in Resources */,
 				CEB199E91E8D7C9300CD1571 /* Assets.xcassets in Resources */,
+				CE1EB5A11E92252800755916 /* Flicks.gif in Resources */,
 				CEB199E71E8D7C9300CD1571 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1EB59D1E9203A600755916 /* NowPlayingViewController.swift in Sources */,
 				CEB199F41E8D7CB800CD1571 /* FlicksViewController.swift in Sources */,
+				CECB829C1E91C30F005E45F2 /* TopRatedViewController.swift in Sources */,
 				CEB199E21E8D7C9300CD1571 /* AppDelegate.swift in Sources */,
+				CE1EB59F1E921DF700755916 /* GridCollectionViewCell.swift in Sources */,
 				CECB82761E915068005E45F2 /* README.md in Sources */,
 				CEB199F61E8D853700CD1571 /* FlickTableViewCell.swift in Sources */,
 				CEB199F81E8DA62300CD1571 /* DetailViewController.swift in Sources */,

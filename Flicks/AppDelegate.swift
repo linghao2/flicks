@@ -15,6 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        
+//        let popularVC = FlicksViewController()
+//        popularVC.tabBarItem.title = "Popular"
+//        let popularNC = UINavigationController(rootViewController: popularVC)
+//        
+//        let topVC = FlicksViewController()
+//        topVC.tabBarItem.title = "Top Rated"
+//        let topNC = UINavigationController(rootViewController: topVC)
+//        
+//        let tabBarController = UITabBarController()
+//        tabBarController.viewControllers = [popularNC, topNC]
+//
+//        window?.rootViewController = tabBarController
+//        window?.makeKeyAndVisible()
+        
         return true
     }
 

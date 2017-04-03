@@ -41,6 +41,11 @@ class FlicksViewController: UIViewController, UITableViewDataSource, UITableView
         populateFlicks(refreshControl)
     }
     
+    func getTypeString() -> String{
+        return "now_playing"
+    }
+    
+    
     func populateFlicks(_ refreshControl: UIRefreshControl?) {
         if refreshControl == nil {
             // Don't show progress if there is a refreshControl already
@@ -48,7 +53,9 @@ class FlicksViewController: UIViewController, UITableViewDataSource, UITableView
         }
         self.errorView.isHidden = true
         
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")
+        //let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")
+        let type = getTypeString()
+        let url = URL(string: "https://api.themoviedb.org/3/movie/\(type)?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: OperationQueue.main)
         let task :URLSessionDataTask = session.dataTask(with: url!) { (dataOrNil, response, error) in
             if error != nil {
@@ -162,7 +169,8 @@ class FlicksViewController: UIViewController, UITableViewDataSource, UITableView
         vc.detailImage = cell.posterImageView.image
         
         if let indexPath = tableView.indexPath(for: cell) {
-            vc.flick = flicks?[indexPath.row]
+            
+            vc.flick = getFlick(indexPath.row)
         }
     }
 
